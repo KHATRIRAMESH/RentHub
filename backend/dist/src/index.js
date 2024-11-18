@@ -8,9 +8,10 @@ const app = express();
 const allowedOrigins = [
     "http://localhost:5173",
     "https://rental-ruby.vercel.app",
+    "https://rent-hub-yche.vercel.app"
 ];
 app.use(cors({
-    origin: ["http://localhost:5173", "https://rental-ruby.vercel.app"],
+    origin: ["http://localhost:5173", "https://rental-ruby.vercel.app", "https://rent-hub-yche.vercel.app/"],
     credentials: true,
     methods: "GET, POST, PUT, DELETE",
 }));
