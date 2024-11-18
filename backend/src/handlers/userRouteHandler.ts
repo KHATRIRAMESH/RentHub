@@ -62,14 +62,14 @@ const handleSignup = async (req: Request, res: Response) => {
       maxAge: 7 * 24 * 60 * 60 * 1000,
       sameSite: "none",
       httpOnly: true,
-      domain: ".rental-backend-five.vercel.app",
+      domain: ".rent-hub-three.vercel.app",
       secure: true,
     });
     res.cookie("userdata", stringifiedData, {
       maxAge: 7 * 24 * 60 * 60 * 1000,
       sameSite: "none",
       httpOnly: true,
-      domain: ".rental-backend-five.vercel.app",
+      domain: ".rent-hub-three.vercel.app",
       secure: true,
     });
 
@@ -123,7 +123,7 @@ const handleLogin = async (req: Request, res: Response) => {
     res.cookie("token", token, {
       maxAge: 7 * 24 * 60 * 60 * 1000,
       sameSite: "none",
-      domain: ".rental-backend-five.vercel.app",
+      domain: ".rent-hub-three.vercel.app",
       httpOnly: true,
       secure: true,
     });
@@ -131,7 +131,7 @@ const handleLogin = async (req: Request, res: Response) => {
       maxAge: 7 * 24 * 60 * 60 * 1000,
       sameSite: "none",
 
-      domain: ".rental-backend-five.vercel.app",
+      domain: ".rent-hub-three.vercel.app",
       httpOnly: true,
       secure: true,
     });
@@ -145,14 +145,14 @@ const handleLogin = async (req: Request, res: Response) => {
 const handleLogout = async (req: Request, res: Response) => {
   res.clearCookie("token", {
     maxAge: 0,
-    domain: ".rental-backend-five.vercel.app",
+    domain: ".rent-hub-three.vercel.app",
     secure: true,
     sameSite: "none",
     path: "/",
   });
   res.clearCookie("userdata", {
     maxAge: 0,
-    domain: ".rental-backend-five.vercel.app",
+    domain: ".rent-hub-three.vercel.app",
     secure: true,
     sameSite: "none",
     path: "/",
